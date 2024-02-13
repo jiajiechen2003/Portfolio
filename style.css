@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(aquamarine, fuchsia);
+}
+
+div[class$="slide"]{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.first-slide {
+    background:url(img/bg.avif);
+}
+
+.container-fluid {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden; 
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+    margin: 0;
+    align-items: center;
+ }
+
+.container-fluid.show {
+    transform: translateX(0);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 55px;
+}
+
+.second-slide {
+    background:url(img/bg.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.container-fluid.web {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+.card-collection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.third-slide {
+    background:url(img/bg.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.fourth-slide {
+    background:url(img/bg.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.fifth-slide {
+    background:url(img/bg.avif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+/* 264653-2a9d8f-e9c46a-f4a261-e76f51 */
