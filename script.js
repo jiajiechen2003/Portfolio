@@ -8,22 +8,3 @@ window.addEventListener("scroll", function () {
     container.classList.toggle("show", isInViewPort);
   });
 });
-
-function copiarAlPortapapeles(text) {
-  let copiedText = document.createElement("textarea");
-  let textContainer = document.getElementById("textContainer");
-
-  copiedText.value = text;
-
-  document.body.appendChild(copiedText);
-
-  copiedText.select();
-  document.execCommand("copy");
-
-  document.body.removeChild(copiedText);
-  textContainer.style.display = "flex";
-
-  setTimeout(function() {
-      textContainer.style.display = "none";
-   }, 2000);
-}

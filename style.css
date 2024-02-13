@@ -41,7 +41,7 @@ div[class$="slide"]{
     scroll-snap-stop: always;
 }
 
-.first-slide {
+.title-slide {
     background:url(img/bg.avif);
 }
 
@@ -78,7 +78,7 @@ div[class$="slide"]{
     font-size: 55px;
 }
 
-.second-slide {
+.content-slide {
     background:url(img/bg.avif);
     display: flex;
     justify-content: center;
@@ -99,29 +99,6 @@ div[class$="slide"]{
     display: flex;
     justify-content: center;
     margin-top: 50px;
-}
-
-
-.third-slide {
-    background:url(img/bg.avif);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-.fourth-slide {
-    background:url(img/bg.avif);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-.fifth-slide {
-    background:url(img/bg.avif);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
 }
 
 
