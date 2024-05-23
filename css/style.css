@@ -28,6 +28,7 @@ body {
 
 header {
     position: fixed;
+    height: 90px;
     width: 100%;
     top: 0;
     right: 0;
@@ -35,17 +36,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
+    background-color: var(--bg-color);
     padding: 22px 15%;
     border-bottom: 1px solid transparent;
     transition: all .45s ease;
-}
-
-.logo {
-    color: var(--text-color);
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1px;
 }
 
 span {
