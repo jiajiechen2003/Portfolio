@@ -1,115 +1,243 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Jia<span>jie</span></a>
+      <ul class="navlist">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">Sobre Mí</a></li>
+        <li><a href="#languages">Tecnolgías</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-</head>
-
-<body>
-  <header class="header">
-    <a href="#" class="logo" id="home-button"><span>Jia</span>Jie</a>
-
-    <nav class="navbar">
-      <!-- <a href="#" class="active home-button">Portfolio</a> -->
-      <a href="#about-me" id="about-me-button">Sobre Mí</a>
-      <a href="projects.html">Proyectos</a>
-      <a href="#">Experiencia</a>
-    </nav>
-
-    <a href="#contact-form" class="contact" id="contact-button">Contact Me</a>
-  </header>
-
-  <div class="home" id="home-start">
-    <div class="home-content">
-      <h3>Hola!</h3>
-      <h1>
-        Soy <span>Jiajie Chen,<br /></span>desarrollador web
-      </h1>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, omnis
-        explicabo ullam, neque quae consequuntur veritatis et sint eveniet
-        cumque culpa, numquam tempore quam debitis delectus at praesentium
-        exercitationem dolores?
-      </p>
-
-      <div class="btn-box">
-        <a href="projects.html"><button class="btn-2">Proyectos</button></a> 
+    <!---------Home --------------->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>Jiajie</h1>
+        <h3>Desarrollador <span>Web.</span></h3>
+        <p>
+          Desarrollador web apasionado con experiencia en crear sitios y
+          aplicaciones web eficientes y atractivos. Especializado en front-end y
+          back-end.
+        </p>
+        <div class="button">
+          <a href="#about" class="btn">About Me</a>
+        </div>
       </div>
-    </div>
-    <div class="img-box">
-      <img src="./img/image-6.png" />
-    </div>
-  </div>
+      <div class="home-animation">
+        <lottie-player
+          src="https://lottie.host/20514eb6-5f79-4731-a2c8-1423e6eb0cfa/4s8XhJASqr.json"
+          background="##FFFFFF"
+          speed="1"
+          style="width: 700px; height: 700px"
+          loop
+          autoplay
+          direction="1"
+          mode="normal"
+        ></lottie-player>
+      </div>
+    </section>
 
-  <div class="about" id="about-me">
-    <div class="about-img">
-      <img src="./img/image-6.png" />
-    </div>
-    <div class="about-content">
-      <h2 class="heading">About <span>Me</span></h2>
-      <h3>Frontend <span>Developer</span></h3>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-        placeat veniam in suscipit exercitationem inventore, nisi magnam
-        adipisci, accusamus alias voluptates, facilis maiores! Distinctio,
-        voluptatum? Ea eos possimus illo voluptate.
-      </p>
-      <a href="#" class="btn-2">Experience</a>
-    </div>
-  </div>
-
-  <div class="contact-form">
-    <h2 class="contact-me" id="contact-form">Contact <span>Me</span></h2>
-
-    <form action="#">
-      <div class="input-box">
-        <input type="text" placeholder="Full Name" />
-        <input type="email" placeholder="Email" />
+    <!---------about --------------->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/yo.JPEG" />
       </div>
 
-      <div class="input-box">
-        <input type="number" placeholder="Phone Number" />
-        <input type="text" placeholder="Subject" />
+      <div class="about-text">
+        <h2>Sobre <span>Mí</span></h2>
+        <p>
+          Soy Jiajie, estudiante de Desarrollo de Aplicaciones Web, con una
+          pasión por crear soluciones digitales innovadoras y eficientes. Mi
+          enfoque está en el desarrollo tanto front-end como back-end, y siempre
+          busco aprender y aplicar las últimas tecnologías en mis proyectos.
+        </p>
+        <a href="#" class="btn">More About</a>
       </div>
+    </section>
 
-      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" style="height: 200px;"></textarea>
-      <input type="submit" value="Send Message" class="btn-1" />
-    </form>
-  </div>
+    <!-----------Services -------------->
+    <section class="languages" id="languages">
+      <div class="main-text">
+        <h2><span>Tecnologías</span> Conocidas</h2>
+      </div>
+      <div class="languages-content">
+        <div class="slider">
+          <div class="box">
+            <img src="img/tecnologias/html-logo.png" />
+            <h1>HTML</h1>
+          </div>
 
-  <footer class="footer">
-    <div class="social">
-      <a href="https://www.facebook.com/>" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
-      <a href="https://www.linkedin.com/in/jiajie-chen-9b5600292/" target="_blank"><i class="bx bxl-linkedin-square" ></i></a>
-      <a href="https://x.com/?lang=es&mx=2" target="_blank"><i class="bx bxl-twitter" ></i></a>
-      <a href="https://www.instagram.com/" target="_blank"><i class="bx bxl-instagram" ></i></a>
-    </div>
-    <ul class="list">
-      <li>
-        <a href="#">FAQ</a>
-      </li>
-      <li>
-        <a href="#">Services</a>
-      </li>
-      <li>
-        <a href="#">About Me</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-      <li>
-        <a href="#">Privacy Policy</a>
-      </li>
-    </ul>
-    <p class="copyright">2024 Jiajie | All Rights Reserved
-    </p>
-  </footer>
+          <div class="box">
+            <img src="img/tecnologias/css-logo.png" />
+            <h1>CSS</h1>
+          </div>
 
-  <script src="script.js"></script>
-</body>
+          <div class="box">
+            <img src="img/tecnologias/js-logo.png" />
+            <h1>JavaScript</h1>
+          </div>
 
+          <div class="box">
+            <img src="img/tecnologias/php-logo.png" />
+            <h1>PHP</h1>
+          </div>
+          <div class="box">
+            <img src="img/tecnologias/github-logo.png" />
+            <h1>GitHub</h1>
+          </div>
+          <div class="box">
+            <img src="img/tecnologias/bootstrap-logo.png" />
+            <h1>Bootstrap</h1>
+          </div>
+          <div class="box">
+            <img src="img/tecnologias/vue-logo.png" />
+            <h1>Vue.js</h1>
+          </div>
+          <div class="box">
+            <img src="img/tecnologias/laravel-logo.png" />
+            <h1>Laravel</h1>
+          </div>
+          <div class="box">
+            <img src="img/tecnologias/java-logo.png" />
+            <h1>Java</h1>
+          </div>
+          <div class="box">
+            <img src="img/tecnologias/mysql-logo.png" />
+            <h1>MySQL</h1>
+          </div>
+          <div class="box">
+            <img src="img/tecnologias/wordpress-logo.png" />
+            <h1>Wordpress</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----------Portfolio --------------->
+    <section class="portfolio" id="portfolio">
+      <div class="main-text">
+        <h2><span>Últimos</span> Proyectos</h2>
+      </div>
+      <div class="portfolio-content">
+        <div class="row">
+          <img src="img/project1.jpg" />
+          <div class="layer">
+            <h5>Pokédex</h5>
+            <p>
+              Aplicación creada con Vue.js, para mostrar diferentes Pokémons, filtrarlos, añadir como favoritos y a tu equipo. Además de una tienda para comprar objetos y un inventario donde guardarlos.
+            </p>
+            <a href="#"> <i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="img/project2.jpg" />
+          <div class="layer">
+            <h5>Colección Cartas One Piece</h5>
+            <p>
+              Aplicación creada con PHP. Se muestra una serie de cartas relacionadas con One Piece, la aplicación permite añadir cartas, modificarlas y eliminarlas.
+            </p>
+            <a href="#"> <i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="img/project3.jpg" />
+          <div class="layer">
+            <h5>Invasión de Los Topos</h5>
+            <p>
+              Minijuego creado con HTML, CSS y JavaScript. El juego consiste en conseguir golpear a los topos suficientes para llegar a 250 puntos.
+            </p>
+            <a href="#"> <i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="img/project4.jpg" />
+          <div class="layer">
+            <h5>Juego Mazmorras</h5>
+            <p>
+              Minijuego creado con Java. Tenemos 3 tipos de personajes, cada uno con diferentes estadísticas. El jugador deberá moverse por el mapa esquivando a los enemigos para conseguir 50 monedas.
+            </p>
+            <a href="#"> <i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="img/project5.jpg" />
+          <div class="layer">
+            <h5>EasyHelp</h5>
+            <p>
+              Aplicación creada con Laravel y Vue.js. Incluye dos tipos de usuarios, proveedor y rider. El proveedor ofrece alimentos para que los riders los recogan y los repartan a gente necesitada.
+            </p>
+            <a href="#"> <i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="img/project6.jpg" />
+          <div class="layer">
+            <h5>Pomodoro Kanban</h5>
+            <p>
+              Aplicación creada con HTML, CSS y JavaScript. Incluye un temporizador con tiempos diferentes usando el método Pomodoro y un tablero Kanban para organizar las tareas.
+            </p>
+            <a href="#"> <i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------Contact ------------>
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contacta <span>Conmigo!</span></h2>
+        <h4>Si tienes algún proyecto en mente.</h4>
+
+        <div class="list">
+          <li><a href="#">655269043</a></li>
+          <li><a href="#">jiaajiie10@gmail.com</a></li>
+        </div>
+
+        <div class="contact-icons">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="#"><i class="bx bxl-youtube"></i></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <input type="name" placeholder="Nombre " required />
+          <input type="email" placeholder="Email " required />
+			<input type="number" placeholder="Número de Teléfono" required />
+          <textarea
+            name=""
+            id=""
+            cols="35"
+            rows="10"
+            placeholder="Introduce Tu Mensaje "
+            required
+          ></textarea>
+          <input type="submit" value="Enviar Mensaje" class="submit" required />
+        </form>
+      </div>
+    </section>
+
+	<script src="js/script.js"></script>
+  </body>
 </html>
