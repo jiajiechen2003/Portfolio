@@ -75,7 +75,7 @@ span {
     display: none;
 }
 
-section {
+section, .content {
     padding: 160px 15% 120px;
 }
 
